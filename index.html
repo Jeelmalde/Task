@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chemical Supplies Table</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="table-container">
+			<h1>Chemical Supplies</h1>
+
+			<!-- Action Buttons -->
+			<div class="action-buttons">
+				<button onclick="addRow()"><span>&#x2795;</span> Add</button>
+				<button onclick="moveRowUp()"><span>&#x2B06;</span> Move Up</button>
+				<button onclick="moveRowDown()"><span>&#x2B07;</span> Move Down</button>
+				<button onclick="deleteRow()"><span>&#x1F5D1;</span> Delete</button>
+				<button onclick="saveTable()"><span>&#x1F4BE;</span> Save</button>
+				<button onclick="editRow()"><span>&#x270E;</span> Edit</button>
+				<button onclick="refressTable()"><span>&#10226;</span> Refress</button>
+			</div>
+
+			<!-- Table -->
+			<table id="chemicalTable">
+				<thead>
+					<tr>
+						<th></th>
+						<th onclick="sortTable(1)">Chemical Name &#x25B2;</th>
+						<th onclick="sortTable(2)">Vendor &#x25B2;</th>
+						<th onclick="sortTable(3)">Density (g/m³) &#x25B2;</th>
+						<th onclick="sortTable(4)">Viscosity (m²/s) &#x25B2;</th>
+						<th onclick="sortTable(5)">Packaging &#x25B2;</th>
+						<th onclick="sortTable(6)">Pack Size &#x25B2;</th>
+						<th onclick="sortTable(7)">Unit &#x25B2;</th>
+						<th onclick="sortTable(8)">Quantity &#x25B2;</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
